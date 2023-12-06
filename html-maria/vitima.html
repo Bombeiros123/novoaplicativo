@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/noar.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css-camilaS/menu.css">
+    <link rel="stylesheet" href="../css-camilaS/estilo_geral.css">
+    <title>Vitima era</title>
+</head>
+<style>
+    #menuToggle
+{
+display: block;
+position: relative; 
+z-index: 1;
+-webkit-user-select: none;
+user-select: none;
+margin-top: 9px;
+}
+
+#menuToggle a
+{
+text-decoration: none;
+color: black;
+
+transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+color: black;
+}
+
+
+#menuToggle input
+{
+display: block;
+width: 40px;
+height: 32px;
+position: absolute;
+top: -7px;
+left: -5px;
+
+cursor: pointer;
+
+opacity: 0; 
+z-index: 2; 
+
+-webkit-touch-callout: none;
+}
+
+/* menu 
+*/
+#menuToggle span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+background: black;
+border-radius: 3px;
+z-index: 1;
+transform-origin: 4px 0px;
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+opacity 0.55s ease;
+}
+
+#menuToggle span:hover {
+background: black;
+}
+
+
+
+#menuToggle span:first-child
+{
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+position: absolute;
+width: 200px;
+margin: -100px 0 0 -50px;
+padding: 50px;
+padding-top: 125px;
+background: white;
+list-style-type: none;
+-webkit-font-smoothing: antialiased;
+transform-origin: 0% 0%;
+transform: translate(-100%, 0);
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+padding: 10px 0;
+font-size: 15px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+transform: none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="menu">
+    <header></header>
+        <div class="esq">
+        <div class="div">
+        <nav role="navigation">
+        <div id="menuToggle">
+        
+        
+           <input type="checkbox" />
+       
+       
+       
+        <span></span>
+        <span></span>
+        <span></span>
+        
+       
+        <ul id="menu">
+       
+            <a href="../html-camilaS/perfil.html"><li>Perfil</li></a>
+            <a href="../html-camilaS/cadastro.html"><li>Cadastro</li></a>
+            <a href="../html-camilaS/index.html"><li>Login</li></a> 
+            <a href="../html-maria/dadospaciente.html"><li>Dados do Paciente</li></a> 
+            <a href="../html-maria/dadosdaambulancia.html"><li>Dados da Ambulância</li></a> 
+            <a href="../html-camilaS/tipo_ocorrencia.html"><li>Tipo de ocorrência</li></a> 
+            <a href="../html-maria/avaliacao-glasgow.html"><li>Glasgow</li></a> 
+            <a href="../html-maria/níveldaocorrencia.html"><li>Nível de conciência</li></a> 
+            <a href="../html-camilaS/sinais_vitais.html"><li>Sinais Vitais</li></a> 
+            <a href="../html-maria/problemas.html"><li>Problemas</li></a> 
+            <a href="../html-camilaS/bonecos.html"><li>Localização de traumas</li></a> 
+            <a href="../html-maria/queimadura.html"><li>Queimaduras</li></a> 
+            <a href="../html-camilaS/objetos.html"><li>Objetos recolhidos</li></a> 
+            <a href="../html-camilaS/sinais_sintomas.html"><li>Sinais sintomas</li></a> 
+            <a href="../html-camilaS/desisao.html"><li>Decisão de transporte</li></a> 
+            <a href="../html-camilaS/equipe _atendimento.html"><li>Equipe de atendimento</li></a> 
+
+
+                        
+        </ul>
+        </div>
+        </nav>
+           
+        </div>
+        </div>
+    </header>
+</div> 
+    <div class="voltar">
+        <img src="../images/noar.png" width="80px">
+    </div>
+            
+    <br><br>
+    <div class="branca">
+        <div class="titulo">
+            <h2> Vítima era </h2>
+        </div>
+
+        <div class="card">
+            <form action="recebe.php" method="post">
+                <h3>Escolha sua opção:</h3>
+
+                <input type="checkbox" name="op1">Ciclista
+                <br><br>
+                <input type="checkbox" name="op2">Condutor moto
+                <br><br>
+                <input type="checkbox" name="op3">Gestante
+                <br><br>
+                <input type="checkbox" name="op4">Pas da frente
+                <br><br>
+                <input type="checkbox" name="op5">Pas da moto
+                <br><br>
+                <input type="checkbox" name="op6">Condutor carro
+                <br><br>
+                <input type="checkbox" name="op7">Clinico
+                <br><br>
+                <input type="checkbox" name="op7">Trauma
+                <br><br>
+                <input type="checkbox" name="op7">Pas bco trás
+                <br><br>
+                <input type="checkbox" name="op7">Pedestra
+                <br><br>
+                
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="BT">ENVIAR</button>
+
+</body>
+</html>

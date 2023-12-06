@@ -189,43 +189,66 @@
             </div> 
             
     </div> <br>  <br>
-    <form action="../php/recebeproblemas.php" method="post">
+    <form action="recebe.php" method="post">
        <div class="tabela">
-        <h3>ㅤProblemas Encontrados Suspeitos</h3>
+        <h3>ㅤInsira as informações do paciente </h3>
      </div>
-     
-<div class="branca">
-       
-    <form action="../php/problemas.php" method="post">
+            <div class="problemas">
+        <br>    <br>
+            <input type="checkbox" name="op1"> PSIQUIÁTRICO 
+            <br>    <br>    
+             <input type="checkbox" name="op2"> RESPIRATÓRIO 
+             
+            <fieldset class="queimaduralocal">
+                SITUAÇÃO
+                <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>DPOC</option>
+                <option>INALAÇÃO DE FUMAÇA</option>
+                </select>
+            </fieldset>
+            <br> 
+            <input type="checkbox" name="op3"> DIABETES 
+            <fieldset class="queimaduralocal">
+                SITUAÇÃO
+                <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>HIPERGLICEMIA</option>
+                <option>HIPOGLICEMIA</option>
+                </select>
+            </fieldset> 
+            <br>
+            <input type="checkbox" name="op4"> OBSTÉTRICO
+            <fieldset class="queimaduralocal">
+                SITUAÇÃO
+                <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>PARTO EMERGENCIAL</option>
+                <option>GESTANTE</option>
+                <option>HEMOR.EXECESSIVA</option>
+                <option>OUTROS</option>
+              </select> <br><br>
+             OUTROS:<input type="text">
+            </fieldset>
+            <br> 
+            <input type="checkbox" name="op5"> TRANSPORTE 
+            <fieldset class="queimaduralocal">
+                SITUAÇÃO
+                <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>AÉREO</option>
+                <option>CLÍNICO</option>
+                <option>EMERGENCIAL</option>
+                <option>PÓS-TRAUMA</option>
+                <option>SAMU</option>
+                <option>SEM REMOÇÃO</option>
+                <option>OUTROS</option>
+                </select> <br><br>
+                OUTROS:<input type="text">
+            </div>
+            </fieldset>
+            <br>
+            <a class="botao "href="../html-camilaS/bonecos.html"><li>ENVIAR</li></a> 
 
-        <br>
-            Psiquiátrico:<input class="input" type="checkbox" name="op1"> 
-            <br><br>
-            Respiratório: 
-            <input class="input" type="radio" name="op2">DPOC 
-            <input class="input" type="radio" name="op2">Inalação Fumaça 
-            <br><br>
-            Diabetes:
-            <input class="input" type="radio" name="op3">Hipoglicemia
-            <input class="input" type="radio" name="op3" >Hiperglicemia
-            <input class="input" type="radio" name="op3" >Não tem diabetes
-            <br><br>
-            Obstétrico:
-            <input type="radio" name="op4"> Parto Emergencial
-            <input type="radio" name="op4">Gestante
-            <input type="radio" name="op4">Hemor.Execessiva
-            <br><br>
-            Transporte:
-            <input type="radio" name="op5">Aéreo
-            <input type="radio" name="op5">Clínico
-            <input type="radio" name="op5">Emergencial<br><br>
-            <input type="radio" name="op5">Pós-Trauma
-            <input type="radio" name="op5">Samu
-            <input type="radio" name="op5">Sem Remoção
-            <br><br>
-
-            <button type="submit">Enviar</button>
-    </form>
+            <BR>
+                ㅤ
+        </form>
 
 
 </body>

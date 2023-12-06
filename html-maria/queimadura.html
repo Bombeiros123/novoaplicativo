@@ -192,90 +192,144 @@
         <h3>ㅤFerimentos/ Fraturas/ Entorses/<br>ㅤLuxação/ Contusão </h3>
      </div>
      <br>
-     <div class="branca">
+     <div class="queimaduralocal2">
      <br>
      
-     <form action="../php/recebequeimadura.php" method="post">>
-        Local:
+     <fieldset class="queimaduralocal">
+        LOCAL:
         <br>
-        <input class="input" type="text" name="loc">
-        
+        <input class="input" type="text" name="LOCAL">
+        <input class="input" type="text" name="LOCAL">
+        <input class="input" type="text" name="LOCAL">
+        <input class="input" type="text" name="LOCAL">
+        <input class="input" type="text" name="LOCAL">
         <br><br>
-        Lado:
+        LADO:
         <br>
-        <input class="input" type="text" name="lado">
+        <input class="input" type="text" name="LADO">
+        <input class="input" type="text" name="LADO">
+        <input class="input" type="text" name="LADO">
+        <input class="input" type="text" name="LADO">
+        <input class="input" type="text" name="LADO">
         <br><br>
-        Face:
+        FACE:
         <br>
-        <input class="input" type="text" name="face">
+        <input class="input" type="text" name="FACE">
+        <input class="input" type="text" name="FACE">
+        <input class="input" type="text" name="FACE">
+        <input class="input" type="text" name="FACE">
+        <input class="input" type="text" name="FACE">
         <br><br>
-        Tipo:
+        TIPO:
         <br>
-        <input class="input" type="text" name="tipo">
-
+        <input class="input" type="text" name="TIPO">
+        <input class="input" type="text" name="TIPO">
+        <input class="input" type="text" name="TIPO">
+        <input class="input" type="text" name="TIPO">
+        <input class="input" type="text" name="TIPO">
+    </fieldset>
+</div>
+    <br>
+    
      <form>
-        <div class="branca"> QUEIMADURAS 
-        <br><br>
-         Cabeça:<br>
-            <input class="input" type="radio" name="op1" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op1" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op1" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op1" value="Nao houve">Não houve
+        <div class="queimaduralocal2"> QUEIMADURAS 
+        <br>    <br>
+         <input type="checkbox" name="op2"> QUEIMADURA NA CABEC
+        <fieldset class="queimaduralocal">
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+            <option>1°GRAU</option>
+            <option>2°GRAU</option>
+            <option>3°GRAU</option>
+            </select>
+        </fieldset>
         <br> 
-        Pesc:<br>
-            <input class="input" type="radio" name="op2" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op2" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op2" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op2" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> PESCO 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br> 
-        T.ant:<br>
-            <input class="input" type="radio" name="op3" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op3" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op3" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op3" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> T.ANT 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br> 
-        T.pos:<br>
-            <input class="input" type="radio" name="op4" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op4" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op4" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op4" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> T.POS 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br> 
-        Genit:<br>
-            <input class="input" type="radio" name="op5" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op5" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op5" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op5" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> GENIT 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br> 
-        Mid:<br>
-            <input class="input" type="radio" name="op6" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op6" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op6" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op6" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> MID 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+            <br>
+        </fieldset> 
         <br>
-        Mie:<br>
-            <input class="input" type="radio" name="op7" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op7" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op7" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op7" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> MIE
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br>
-        Msd:<br>
-        <input class="input" type="radio" name="op8" value="1°Grau">1°Grau
-        <input class="input" type="radio" name="op8" value="2°Grau">2°Grau
-        <input class="input" type="radio" name="op8" value="3°Grau">3°Grau
-        <input class="input" type="radio" name="op8" value="Nao houve">Não houve
+        <input type="checkbox" name="op3"> MSD 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
         <br>
-        Mse:<br>
-            <input class="input" type="radio" name="op9" value="1°Grau">1°Grau
-            <input class="input" type="radio" name="op9" value="2°Grau">2°Grau
-            <input class="input" type="radio" name="op9" value="3°Grau">3°Grau
-            <input class="input" type="radio" name="op9" value="Nao houve">Não houve
-
-            <BR><BR>
-                <button type="submit">Enviar</button>
+        <input type="checkbox" name="op3"> MSE 
+        <fieldset>
+            SITUAÇÃO
+            <select id=SITUAÇÃO class=SITUAÇÃO>
+                <option>1°GRAU</option>
+                <option>2°GRAU</option>
+                <option>3°GRAU</option>
+            </select>
+        </fieldset> 
     </div>
 
      </form>
-     
+     <br>
+     <a class="botao "href="../html-camilaS/objetos.html"><li>ENVIAR</li></a> 
+     <BR>
         ㅤ
 </body>
 </html>
