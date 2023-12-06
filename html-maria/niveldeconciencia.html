@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível de conciência</title>
+    <link href="../css-camilaS/estilo_geral.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="../images/noar.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gabriela&family=Ysabeau+SC:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+
+    <style>
+        #menuToggle
+{
+ display: block;
+ position: relative; 
+ z-index: 1;
+ -webkit-user-select: none;
+ user-select: none;
+ margin-top: 9px;
+}
+
+#menuToggle a
+{
+ text-decoration: none;
+ color: black;
+ 
+ transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+ color: black;
+}
+
+
+#menuToggle input
+{
+ display: block;
+ width: 40px;
+ height: 32px;
+ position: absolute;
+ top: -7px;
+ left: -5px;
+ 
+ cursor: pointer;
+ 
+ opacity: 0; 
+ z-index: 2; 
+ 
+ -webkit-touch-callout: none;
+}
+
+/* menu 
+*/
+#menuToggle span
+{
+ display: block;
+ width: 33px;
+ height: 4px;
+ margin-bottom: 5px;
+ position: relative;
+ background: black;
+ border-radius: 3px;
+ z-index: 1;
+ transform-origin: 4px 0px;
+ transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+ opacity 0.55s ease;
+}
+
+#menuToggle span:hover {
+ background: black;
+}
+
+
+
+#menuToggle span:first-child
+{
+ transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+ transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+ opacity: 1;
+ transform: rotate(45deg) translate(-2px, -1px);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+ opacity: 0;
+ transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+ transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+ position: absolute;
+ width: 200px;
+ margin: -100px 0 0 -50px;
+ padding: 50px;
+ padding-top: 125px;
+ background: white;
+ list-style-type: none;
+ -webkit-font-smoothing: antialiased;
+ transform-origin: 0% 0%;
+ transform: translate(-100%, 0);
+ transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+ padding: 10px 0;
+ font-size: 15px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+ transform: none;
+}
+    </style>
+
+</head>
+<body>
+    
+
+
+    <div class="menu">
+        <header>
+            <div class="esq">
+            <div class="div">
+            <nav role="navigation">
+            <div id="menuToggle">
+            
+            
+               <input type="checkbox" />
+           
+           
+           
+            <span></span>
+            <span></span>
+            <span></span>
+            
+           
+            <ul id="menu">
+           
+                <a href="../html-camilaS/perfil.html"><li>Perfil</li></a>
+                <a href="../html-camilaS/cadastro.html"><li>Cadastro</li></a>
+                <a href="../html-camilaS/index.html"><li>Login</li></a> 
+                <a href="../html-maria/dadospaciente.html"><li>Dados do Paciente</li></a> 
+                <a href="../html-maria/dadosdaambulancia.html"><li>Dados da Ambulância</li></a> 
+                <a href="../html-camilaS/tipo_ocorrencia.html"><li>Tipo de ocorrência</li></a> 
+                <a href="../html-maria/avaliacao-glasgow.html"><li>Glasgow</li></a> 
+                <a href="../html-maria/níveldaocorrencia.html"><li>Nível de conciência</li></a> 
+                <a href="../html-camilaS/sinais_vitais.html"><li>Sinais Vitais</li></a> 
+                <a href="../html-maria/problemas.html"><li>Problemas</li></a> 
+                <a href="../html-camilaS/bonecos.html"><li>Localização de traumas</li></a> 
+                <a href="../html-maria/queimadura.html"><li>Queimaduras</li></a> 
+                <a href="../html-camilaS/objetos.html"><li>Objetos recolhidos</li></a> 
+                <a href="../html-camilaS/sinais_sintomas.html"><li>Sinais sintomas</li></a> 
+                <a href="../html-camilaS/desisao.html"><li>Decisão de transporte</li></a> 
+                <a href="../html-camilaS/equipe _atendimento.html"><li>Equipe de atendimento</li></a> 
+                <a href="../html-camilaS/procedimentos.html"><li>procedimentos efetuados</li></a> 
+       
+                            
+            </ul>
+            </div>
+            </nav>
+               
+            </div>
+            </div>
+
+            <div class="voltar">
+                <img src="../images/noar.png" width="80px">
+            </div>    
+    </div>
+    <br>
+    <div class="tabela">
+        <h3>ㅤNível de conciência </h3>
+     </div>
+        <form action="../php/recebenivelconciencia.php" method="post">
+
+            
+            <div class="nivelocorrencia">
+                <br>
+                <div class="abertura">
+                <h3>Abertura Ocular</h3>
+                ESPONTÂNEA:<input type="radio" name="op1" value="ESPONTÂNEA"> 4
+                <br> 
+                COMANDO VERBAL:<input type="radio" name="op1"value="COMANDO VERBAL"> 3
+                <br>
+                ESTÍMULO DOLOROSO:<input type="radio" name="op1"value="ESTÍMULO DOLOROSO"> 2
+                <br>
+                NENHUMA:<input type="radio" name="op1"value="NENHUMA"> 1 
+                <br>
+                
+                <h3>Resposta Verbal</h3>
+                ORIENTADO:<input type="radio" name="op2"value="ORIENTADO"> 5
+                <br> 
+                CONFUSO:<input type="radio" name="op2"value="CONFUSO"> 4
+                <br>
+                PALAVRAS INAPROPRIADAS:<input type="radio" name="op2"value="PALAVRAS INAPROPRIADAS"> 3
+                <br>
+                PALAVRAS INCOMPREESÍVEIS:<input type="radio" name="op2"value=" PALAVRAS INCOMPREESÍVEIS"> 2
+                <br>
+                NENHUMA:<input type="radio" name="op2"value="NENHUMA"> 1
+                <br>
+
+                <h3>Resposta Motora</h3>
+                OBEDECE COMANDOS:<input type="radio" name="op3"value="OBEDECE COMANDOS"> 6
+                <br> 
+                LOCALIZADOR:<input type="radio" name="op3"value=" LOCALIZADOR"> 5
+                <br>
+                MOVIMENTO DE RETIRADA:<input type="radio" name="op3"value="MOVIMENTO DE RETIRADA"> 4
+                <br>
+                FLEXÃO ANORMAL:<input type="radio" name="op3"value=" FLEXÃO ANORMAL"> 3
+                <br>
+                EXTENSÃO ANORMAL:<input type="radio" name="op3"value=" EXTENSÃO ANORMAL"> 2
+                <br>
+                NENHUMA:<input type="radio" name="op3"value="NENHUMA"> 1
+                <br>  <br> <br>
+                <button type="submit">Enviar</button>
+
+            </form>
+            </div>
+        </div> 
+    </div>
+</body>
+
+
+</html>

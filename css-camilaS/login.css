@@ -1,0 +1,20 @@
+body
+{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%; /*largura*/
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+    background-color: #164FFA;
+}
+.logo
+{
+    width: 80px;
+    margin-left: 120px;
+    margin-top: -50px;
+}
+
