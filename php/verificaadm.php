@@ -3,7 +3,6 @@ include("conecta.php");
 
 $Nome = $_POST['Nome'];
 $CPF = $_POST['CPF'];
-// $Telefone = $_POST['Telefone'];
 $Email = $_POST['Email'];
 $Senha = $_POST['Senha'];
 

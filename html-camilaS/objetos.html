@@ -188,20 +188,14 @@ transform: none;
         <img src="../images/noar.png" width="80px">
     </div>
     <div class="branca">
-        <div class="titulo">
-            <h2>Objetos recolhidos</h2>
-        </div>
-
-        <div class="card">
-            <form action="recebe.php" method="post">
-                <h3>Digite aqui:</h3>
-                <input class="input" type="text" name="op1">
-                <br><br>
+            <form action="../php/recebeobjetos.php" method="post">
                 
+                Informe os objetos recolhidos:<input type="text" name="op1" >
+                <br><br>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
-    <br>
-    <button type="submit" class="BT">ENVIAR</button>
+  
 </body>
 </html>

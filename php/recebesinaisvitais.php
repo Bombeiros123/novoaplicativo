@@ -44,5 +44,5 @@ $stmt->bindParam(':op8', $perfusao);
 $stmt->bindParam(':idPac', $idPac);
 
 if($stmt->execute()){
-    header('Location: ../html-maria/problemas.html');
+    header('Location: ../html-maria/queimadura.html');
 }

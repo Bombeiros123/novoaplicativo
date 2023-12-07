@@ -189,62 +189,55 @@
             </div> 
             
     </div> <br>  <br>
-    <form action="recebe.php" method="post">
-       <div class="tabela">
-        <h3>ㅤInsira as informações do paciente </h3>
-     </div>
-            <div class="problemas">
-        <br>    <br>
-            <input type="checkbox" name="op1"> PSIQUIÁTRICO 
-            <br>    <br>    
-             <input type="checkbox" name="op2"> RESPIRATÓRIO 
-             
-            <fieldset class="queimaduralocal">
-                SITUAÇÃO
-                <select id=SITUAÇÃO class=SITUAÇÃO>
-                <option>DPOC</option>
-                <option>INALAÇÃO DE FUMAÇA</option>
-                </select>
-            </fieldset>
-            <br> 
-            <input type="checkbox" name="op3"> DIABETES 
-            <fieldset class="queimaduralocal">
-                SITUAÇÃO
-                <select id=SITUAÇÃO class=SITUAÇÃO>
-                <option>HIPERGLICEMIA</option>
-                <option>HIPOGLICEMIA</option>
-                </select>
-            </fieldset> 
+    <form action="../php/recebeproblemas.php" method="post">
+
+        <div class="branca">
             <br>
-            <input type="checkbox" name="op4"> OBSTÉTRICO
-            <fieldset class="queimaduralocal">
-                SITUAÇÃO
-                <select id=SITUAÇÃO class=SITUAÇÃO>
-                <option>PARTO EMERGENCIAL</option>
-                <option>GESTANTE</option>
-                <option>HEMOR.EXECESSIVA</option>
-                <option>OUTROS</option>
-              </select> <br><br>
-             OUTROS:<input type="text">
-            </fieldset>
-            <br> 
-            <input type="checkbox" name="op5"> TRANSPORTE 
-            <fieldset class="queimaduralocal">
-                SITUAÇÃO
-                <select id=SITUAÇÃO class=SITUAÇÃO>
-                <option>AÉREO</option>
-                <option>CLÍNICO</option>
-                <option>EMERGENCIAL</option>
-                <option>PÓS-TRAUMA</option>
-                <option>SAMU</option>
-                <option>SEM REMOÇÃO</option>
-                <option>OUTROS</option>
-                </select> <br><br>
-                OUTROS:<input type="text">
-            </div>
-            </fieldset>
+            
+            Psiquiátrico:<input type="checkbox" name="op1" value="psiquiatrico">
+            <br><br> 
+            Respiratório:
             <br>
-            <a class="botao "href="../html-camilaS/bonecos.html"><li>ENVIAR</li></a> 
+            Dpoc:<input type="radio" name="op2"value="dpoc">
+            <br>
+            Inalação Fumasa:<input type="radio" name="op2"value="inalacao"> 
+            <br>
+            Normal:<input type="radio" name="op2"value="normal"> 
+            <br><br> 
+            Diabetes:
+            <br>
+            Hiperglicemia:<input type="radio" name="op3"value="hiperglicemia">
+            <br>
+            Hipoglicemia:<input type="radio" name="op3"value="hipoglicemia"> 
+            <br>
+            Não obtém:<input type="radio" name="op3"value="naoobtem"> 
+            <br><br> 
+            Obstétrico:
+            <br>
+            Parto emergencial:<input type="radio" name="op4"value="partoemergencial">
+            <br>
+            Gestante:<input type="radio" name="op4"value="gestante"> 
+            <br>
+            Hemor.excessiva:<input type="radio" name="op4"value="hemor.excessiva"> 
+            <br>
+            Não grávida:<input type="radio" name="op4"value="naogravida"> 
+            <br><br> 
+            Transporte:
+            <br>
+            Aéreo:<input type="radio" name="op5"value="aereo">
+            <br>
+            Clínico:<input type="radio" name="op5"value="clinico"> 
+            <br>
+            Emergencial:<input type="radio" name="op5"value="emergencial"> 
+            <br>
+            Pós-trauma:<input type="radio" name="op5"value="postrauma"> 
+            <br>
+            Samu:<input type="radio" name="op5"value="samu"> 
+            <br>
+            Sem remoção:<input type="radio" name="op"value="semremocao"> 
+            <br>
+            
+            <button type="submit">Enviar</button>
 
             <BR>
                 ㅤ

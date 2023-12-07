@@ -11,10 +11,8 @@ $(function () {
     var person = JSON.stringify({
        Nome: $("#Nome").val(),
         CPF: $("#CPF").val(),
-        Telefone: $("#Telefone").val(),
-        Email: $("#Email").val(),
-        
-        Senha: $("#Senha").val()
+        Senha: $("#Senha").val(),
+        Email: $("#Email").val()
     }); 
     //Inserir o objeto na tabela
     tblPersons.push(person);
@@ -29,10 +27,8 @@ $(function () {
     tblPersons[selected_index] = JSON.stringify({
         Nome: $("#Nome").val(),
         CPF: $("#CPF").val(),
-        Telefone: $("#Telefone").val(),
-        Email: $("#Email").val(),
-        
-        Senha: $("#Senha").val()
+        Senha: $("#Senha").val(), 
+        Email: $("#Email").val()
     });
     //Armazenar os itens em localStorage
     localStorage.setItem("tblPersons", JSON.stringify(tblPersons)); 
@@ -55,9 +51,8 @@ $(function () {
             "<tr>" +                
             "<th>Nome</th>" +
             "<th>CPF</th>" +
-            "<th>Telefone</th>" +
+            "<th>Senha</th>" +
             "<th>Email</th>" +
-             "<th>Senha</th>" +
             "<th>Ações</th>" +
             "</tr>" +
             "</thead>" +
@@ -69,9 +64,9 @@ $(function () {
         $("#tblList tbody").append("<tr>" +                    
                 "<td>" + per.Nome + "</td>" +
                 "<td>" + per.CPF + "</td>" +
-                "<td>" + per.Telefone + "</td>" +
+                "<td>" + per.Senha + "</td>" + 
                 "<td>" + per.Email + "</td>" +
-                  "<td>" + per.Senha + "</td>" +                  
+                                   
                                    
                  "<td><img src='http://res.cloudinary.com/demeloweb/image/upload/v1497537879/edit_n51oto.png' alt='Edit" + i + "' class='btnEdit'/>&nbsp &nbsp<img src='http://res.cloudinary.com/demeloweb/image/upload/v1497537882/delete_ntuxjl.png' alt='Delete" + i + "' class='btnDelete'/></td>" +                  
                 
@@ -97,9 +92,9 @@ $(function () {
     var per = JSON.parse(tblPersons[selected_index]); 
     $("#Nome").val(per.Nome);
     $("#CPF").val(per.CPF);
-    $("#Telefone").val(per.Telefone);
-    $("#Email").val(per.Email);
     $("#Senha").val(per.Senha);
+    $("#Email").val(per.Email);
+    
   
   });
 

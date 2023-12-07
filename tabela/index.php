@@ -1,5 +1,5 @@
 <?php 
-    require_once '../php/conecta.php';
+    require_once 'conecta.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" >
@@ -16,7 +16,7 @@
         <!-- Cabeçalho -->
         <div class="page-header">
             <h1>Bombeiros cadastrados</h1>
-            <h2>Adcionar, excluir ou inserir bombeiros abaixo</h2>
+            <h2>Adicionar, excluir ou editar bombeiros abaixo</h2>
         </div>
 
         <!--Formulário de entrada de dados-->
@@ -34,10 +34,10 @@
                         <input type="number" name="CPF" id="CPF" class="form-control" placeholder="CPF">
                     </div>
                 </div>
-              <div class="form-group">
-                    <label for="txtName" class="col-lg-2 control-label">Telefone</label>
+         <div class="form-group">
+                    <label for="txtEmail" class="col-lg-2 control-label">Senha</label>
                     <div class="col-sm-4">
-                        <input type="text" name="Telefone" id="Telefone" class="form-control" placeholder="Telefone">
+                        <input type="text" id="Senha" name="Senha"class="form-control" placeholder="Senha">
                     </div>
                 </div>
               <div class="form-group">
@@ -46,12 +46,7 @@
                         <input type="email" name="Email"id="Email" class="form-control" placeholder="Email">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="txtEmail" class="col-lg-2 control-label">Senha</label>
-                    <div class="col-sm-4">
-                        <input type="text" id="Senha" name="Senha"class="form-control" placeholder="Senha">
-                    </div>
-                </div>
+              
                 <div class="form-group">
                     <div class="col-lg-offset-2 col-sm-4">
                         <input type="submit" value="Insertar" id="btnSave" class="btn btn-success"/>
@@ -70,6 +65,9 @@
         foreach($r as $row) {?>
             <p>id: <?=$row['Id'];?></p>
             <p>nome: <?=$row['Nome'];?></p>
+            <p>nome: <?=$row['CPF'];?></p>
+            <p>nome: <?=$row['Senha'];?></p>
+            <p>nome: <?=$row['Email'];?></p>
         <?php
         }
     ?>
